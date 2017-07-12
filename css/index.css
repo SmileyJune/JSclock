@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#clock{
+	width:1000px;
+	height: 600px;
+	margin: 0 auto;
+	background: url(../img/clock.jpg) no-repeat;
+	padding: 220px 240px;
+}
+#clock #space,
+#clock #colon{
+	width: 20px;
+	height: 150px;            
+	position: relative;
+	float: left;
+}
+#clock #colon .colon_top{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	margin-top: 35px;
+	animation: allColon 1S ease-out infinite;
+}
+#clock #colon .colon_bottom{
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	margin-top: 20px;
+	animation: allColon 1S ease-out infinite;
+}
+@keyframes allColon{
+	0%{background: rgba(255,255,255,1);}
+	10%{background: rgba(255,255,255,0);}
+	50%{background: rgba(255,255,255,0);}
+	60%{background: rgba(255,255,255,1);}
+	100%{background: rgba(255,255,255,1);}
+}
+#clock #hours_tens,
+#clock #hours_units,
+#clock #Minutes_tens,
+#clock #Minutes_units,
+#clock #seconds_tens,
+#clock #seconds_units{
+	width: 50px;
+	height: 130px;
+	position: relative;
+	float: left;
+}
+
+
+#clock .hg1{
+	width:50px;
+	height: 15px;
+	border-radius: 8px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.05);
+}
+#clock .hg2{
+	width: 15px;
+	height: 72px;
+	border-radius: 8px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.05);
+}
+#clock .hg3{
+	width: 15px;
+	height: 72px;
+	border-radius: 8px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: rgba(255,255,255,0.05);
+}
+#clock .hg4{
+	width: 15px;
+	height:72px;
+	border-radius: 8px;
+	position: absolute;
+	top: 58px;
+	left: 0;
+	background: rgba(255,255,255,0.05);
+}
+#clock .hg5{
+	width: 15px;
+	height: 72px;
+	border-radius: 8px;
+	position: absolute;
+	top: 58px;
+	right: 0;
+	background: rgba(255,255,255,0.05);
+}
+#clock .hg6{
+	width: 50px;
+	height: 15px;
+	border-radius: 8px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(255,255,255,0.05);
+}
+#clock .hg7{
+	width: 50px;
+	height: 15px;
+	border-radius: 8px;
+	position: absolute;
+	top: 57.5px;
+	left: 0;
+	background: rgba(255,255,255,0.05);
+}
+
+#clock .one .hg3,#clock .one .hg5,
+#clock .two .hg1,#clock .two .hg3,#clock .two .hg7,#clock .two .hg4,#clock .two .hg6,
+#clock .three .hg1,#clock .three .hg3,#clock .three .hg7,#clock .three .hg5,#clock .three .hg6,
+#clock .four .hg2,#clock .four .hg7,#clock .four .hg3,#clock .four .hg5,
+#clock .five .hg1,#clock .five .hg2,#clock .five .hg5,#clock .five .hg6,#clock .five .hg7,
+#clock .six .hg1,#clock .six .hg2,#clock .six .hg4,#clock .six .hg5,#clock .six .hg6,#clock .six .hg7,
+#clock .seven .hg1,#clock .seven .hg3,#clock .seven .hg5,
+#clock .eight .hg1,#clock .eight .hg2,#clock .eight .hg3,#clock .eight .hg4,#clock .eight .hg5,#clock .eight .hg6,#clock .eight .hg7,
+#clock .nine .hg1,#clock .nine .hg2,#clock .nine .hg3,#clock .nine .hg5,#clock .nine .hg6,#clock .nine .hg7,
+#clock .zero .hg1,#clock .zero .hg2,#clock .zero .hg3,#clock .zero .hg4,#clock .zero .hg5,#clock .zero .hg6{
+	background-color: white;
+}
